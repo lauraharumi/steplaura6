@@ -14,5 +14,3 @@ def format_solution(solution):
 def print_solution(solution):
     print(format_solution(solution))
 
-print read_input("data/input_0.csv")
-
