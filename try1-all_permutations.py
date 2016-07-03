@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 import itertools
-import sys
 import math
+import sys
+sys.path.insert(0, './data')
 from common import print_solution, read_input
 import time
 start_time = time.time()
@@ -30,6 +31,6 @@ def try_everything(xy_list):
 
 if __name__ == '__main__':
     assert len(sys.argv) > 1
-    xy_list = read_input(sys.argv[1])
+    xy_list = read_input("data/"+sys.argv[1])
     print try_everything(xy_list)
     print("RunTime: %s seconds" % (time.time() - start_time))
